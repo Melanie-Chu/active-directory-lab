@@ -1,0 +1,41 @@
+# Active Directory Home Lab – Project Report
+
+This project demonstrates core Windows Server administration tasks including Active Directory user and group management, file sharing with permissions, printer configuration, DHCP scope and reservation setup, and PowerShell reporting.
+
+*** Part A – Create a New User and Domain Local Group ***
+1. Create a new OU named LabTest2.
+2. Create a new user in the LabTest2 OU named PTest2_User.
+3. Create a new Domain Local Group named PTest2_DLG in the LabTest2 OU.
+4. Add the PTest2_User to the PTest2_DLG group.
+
+*** Part B – Create a Share and Set Permissions ***
+1. Make a folder named Practical_Files on the root of the C: drive.
+2. Share the folder and set share permissions so that ONLY Everyone has Full Control.
+3. Create a file in the Practical_Files folder named Test2.txt.
+4. Configure the permissions so that ONLY the PTest2_DLG group has the Read NTFS permissions on the file.
+
+*** Part C – Configure a Shared Printer ***
+1. Create a new shared printer using any Canon printer driver and a TCP/IP port with an IP address
+2. Change the print permissions to add the PTest2_DLG group having Manage Documents permission.
+
+*** Part D – Create a DHCP Scope and Reservation ***
+1. Create a new DHCP scope
+2. Create a reservation for a VM
+
+*** Part E – PowerShell Script ***
+Write a PowerShell script that does the following:
+- Creates a report called Practical2Report.log in a subfolder named Reports your home directory.
+- The script should check for the existence of the Reports directory and create it if it does not exist.
+- This script should generate a list of all printers on your Server displaying the printer name, port name and whether or not the printer is shared.
+- The report should start with the title: “PRINTER REPORT”
+- The report needs to contain the date, the name of the server and the currently logged in user
+- The script should generate a message on the screen that informs the user that the report has been created.
+
+## Results / Learning Outcome
+
+- Successfully created AD users, OUs, and Domain Local Groups.
+- Configured a shared folder with correct NTFS and share permissions.
+- Set up a shared printer with Manage Documents permissions for the AD group.
+- Configured a DHCP scope and created a reservation.
+- Generated a PowerShell report with all printers, server info, and logged-in user information.
+
