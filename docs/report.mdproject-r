@@ -7,20 +7,30 @@ This project demonstrates core Windows Server administration tasks including Act
 2. Create a new user in the LabTest2 OU named PTest2_User.
 3. Create a new Domain Local Group named PTest2_DLG in the LabTest2 OU.
 4. Add the PTest2_User to the PTest2_DLG group.
+![AD User and Group](screenshots/ad-user-group.png)
+
 
 *** Part B – Create a Share and Set Permissions ***
 1. Make a folder named Practical_Files on the root of the C: drive.
 2. Share the folder and set share permissions so that ONLY Everyone has Full Control.
 3. Create a file in the Practical_Files folder named Test2.txt.
 4. Configure the permissions so that ONLY the PTest2_DLG group has the Read NTFS permissions on the file.
+![File Share Permissions](screenshots/share-permissions.png)
+![NTFS Permissions](screenshots/NTFS-permissions.png)
+
 
 *** Part C – Configure a Shared Printer ***
 1. Create a new shared printer using any Canon printer driver and a TCP/IP port with an IP address
 2. Change the print permissions to add the PTest2_DLG group having Manage Documents permission.
+![Printer Setup](screenshots/shared-printer.png)
+
 
 *** Part D – Create a DHCP Scope and Reservation ***
 1. Create a new DHCP scope
 2. Create a reservation for a VM
+![DHCP Scope](screenshots/DHCP-scope.png)
+![DHCP Reservation](screenshots/DHCP-reservation.png)
+
 
 *** Part E – PowerShell Script ***
 Write a PowerShell script that does the following:
@@ -30,6 +40,6 @@ Write a PowerShell script that does the following:
 - The report should start with the title: “PRINTER REPORT”
 - The report needs to contain the date, the name of the server and the currently logged in user
 - The script should generate a message on the screen that informs the user that the report has been created.
-
-
+![PowerShell script](screenshots/script.png)
+![Script output](screenshots/report-file.png)
 
