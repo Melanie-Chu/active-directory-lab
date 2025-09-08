@@ -31,11 +31,5 @@ Write a PowerShell script that does the following:
 - The report needs to contain the date, the name of the server and the currently logged in user
 - The script should generate a message on the screen that informs the user that the report has been created.
 
-## Results / Learning Outcome
 
-- Successfully created AD users, OUs, and Domain Local Groups.
-- Configured a shared folder with correct NTFS and share permissions.
-- Set up a shared printer with Manage Documents permissions for the AD group.
-- Configured a DHCP scope and created a reservation.
-- Generated a PowerShell report with all printers, server info, and logged-in user information.
 
